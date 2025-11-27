@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://dulguunmunkhbold.github.io/game/sitemap.xml
