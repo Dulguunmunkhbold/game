@@ -3,6 +3,7 @@
 var soundFail = new Audio('./spin-fail-295088.mp3');
 var soundWin = new Audio('./winner_sound.mp3');
 var soundNew = new Audio('./page-flip.mp3');
+var soundDice = new Audio('./dice-95077 (1).mp3');
 var activePlayer, scores, roundScore;
 var diceNumber;
 var isPlaying;
@@ -79,6 +80,9 @@ function initGame() {
 // roll dice button дарахад event ажиллах ба шоо шидэх эвэнт байна буюу голын шооны зураг хөдөлнө.
 document.querySelector(".btn-roll").addEventListener("click", function () {
     if (isPlaying) {
+        soundDice.pause();
+        soundDice.currentTime = 0; // Дахин тоглуулахад эхнээс нь эхлүүлэх
+        soundDice.play();
 
         // 1. Оноог тооцох эцсийн шооны тоог хадгалах хувьсагчийг зарлах
         var finalDiceNumber;
