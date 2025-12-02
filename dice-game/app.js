@@ -1,8 +1,8 @@
 //Тоглоомын бүх газар дуудагдах ГЛОБАЛ хувьсагч
 
-var soundFail = new Audio('/spin-fail-295088.mp3');
-var soundWin = new Audio('/winner_sound.mp3');
-var soundNew = new Audio('/page-flip.mp3');
+var soundFail = new Audio('./spin-fail-295088.mp3');
+var soundWin = new Audio('./winner_sound.mp3');
+var soundNew = new Audio('./page-flip.mp3');
 var activePlayer, scores, roundScore;
 var diceNumber;
 var isPlaying;
